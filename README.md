@@ -1,0 +1,1 @@
+navisens_mini
