@@ -5,7 +5,7 @@ class QueryController < ApplicationController
     
     self.class.get("https://api.yelp.com/v3/businesses/search",
         headers: {"Authorization" => "Bearer #{ENV['YELPACCESSKEY']}"},
-        query: {latitude: lat, longitude: lon, radius: (113000*size).to_i}
+        query: {latitude: lat, longitude: lon, radius: (111000*size).to_i}
     )
   end
   
